@@ -1,19 +1,55 @@
 import 'package:flutter/material.dart';
 
-void test(){
+
+void basicOne() {
+  print("Hello Dart!");
+  print(2 + 2);
+  print((4 + 4) / 3);
+  print((4 + 4) ~/ 3);
+}
+
+void basicTwo() {
+  int myInteger = -1;
+  double myDouble = 1.3;
+  String myString = 'Hello String';
+  bool myBool = true;
+
+  print(myInteger);
+  print(myDouble);
+  print(myString);
+  print(myBool);
+
+  var myVar = 2.4;
+  print(myVar);
+}
+
+void basicThree() {
+  var numberOne = 5;
+  var numberTwo = 2;
+
+  print(numberOne + numberTwo);
+  print(numberOne - numberTwo);
+  print(numberOne * numberTwo);
+  print(numberOne / numberTwo);
+}
+
+void basicFour() {
 
 }
 
 void main() {
-  runApp(const MyApp());
+  basicOne();
+  basicTwo();
+  basicThree();
 }
+
+
 
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
-    test();
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
