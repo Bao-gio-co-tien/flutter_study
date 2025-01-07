@@ -34,13 +34,27 @@ void basicThree() {
 }
 
 void basicFour() {
+  dynamic age = 20;
+  age = "Hey";
 
+  double hey = 2.0;
+  int hey2 = hey.toInt();
+
+  num bruh = 20;
+  var ohbruh = bruh as int;
+}
+
+void basicFive() {
+  String a = "abcd";
+  print(a.codeUnits);
 }
 
 void main() {
   basicOne();
   basicTwo();
   basicThree();
+  basicFour();
+  basicFive();
 }
 
 
